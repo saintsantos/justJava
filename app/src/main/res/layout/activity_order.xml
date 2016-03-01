@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.saintsantos.edwin.justjava.OrderActivity">
+
+    <LinearLayout
+        android:id="@+id/orderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order: "
+            android:textSize="40sp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/coffeeTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="coffees: 1"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Add cream"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/milk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:paddingBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text= "Add sugar"
+            android:paddingBottom="10dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:textSize="70sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/orderSummary"/>
+
+    <TextView
+        android:id="@+id/priceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$5"
+        android:textSize="60sp"
+        android:textColor="#388E3C"
+        android:layout_below="@id/Total"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
