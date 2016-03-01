@@ -40,12 +40,6 @@ public class MainActivity extends AppCompatActivity {
         //Toast.makeText(getApplicationContext(), "Your order has been successfully submitted!", Toast.LENGTH_SHORT).show();
         int finalPrice = findMyPrice.calcPrice(coffeeNumber, cost);
         Intent intent = new Intent(this, OrderActivity.class);
-        intent.putExtra("milkBool", milk);
-        intent.putExtra("creamBool", cream);
-        intent.putExtra("sugarBool", sugar);
-        intent.putExtra("displayValue", finalPrice);
-        intent.putExtra("coffeeCount", coffeeNumber);
-        startActivity(intent);
     }
 
     public void addOne(View view) {

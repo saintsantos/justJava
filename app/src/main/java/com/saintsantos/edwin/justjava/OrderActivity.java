@@ -19,9 +19,9 @@ public class OrderActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int displayValue = intent.getIntExtra("displayValue", 0);
         int coffeeCount = intent.getIntExtra("coffeeCount", 0);
-        Boolean milk = intent.getBooleanExtra("milkBool", false);
-        Boolean cream = intent.getBooleanExtra("creamBool", false);
-        Boolean sugar = intent.getBooleanExtra("sugarBool", false);
+        Boolean milk = intent.getIntExtra("milkBool", true);
+        Boolean cream = intent.getIntExtra("creamBool", true);
+        Boolean sugar = intent.getBooleanExtra("sugarBool", true);
         TextView milkView = (TextView) findViewById(R.id.milk);
         TextView creamView = (TextView) findViewById(R.id.cream);
         TextView sugarView = (TextView) findViewById(R.id.sugar);

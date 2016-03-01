@@ -13,7 +13,7 @@ public class FindPriceImpl implements FindPrice  {
     private MainActivity main;
 
     public FindPriceImpl(MainActivity mainAct) {
-        main = mainAct;
+        //main = mainAct;
 
     }
 
